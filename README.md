@@ -36,15 +36,34 @@ Findings are classified by risk:
 
 ## Installation
 
-```bash
-npm install mcp-manifest-guard
-```
-
-Or use globally:
+### From Local Directory
 
 ```bash
-npm install -g mcp-manifest-guard
+npm install /path/to/mcp-manifest-guard
 ```
+
+Or in another project:
+
+```bash
+npm install ../mcp-manifest-guard
+```
+
+### From GitHub
+
+```bash
+npm install github:athukarad109/mcp-manifest-guard
+```
+
+### Publishing to npm
+
+To publish this package to npm:
+
+```bash
+npm run build
+npm publish
+```
+
+The `prepublishOnly` script will automatically build TypeScript before publishing.
 
 ## Usage
 

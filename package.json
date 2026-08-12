@@ -1,0 +1,33 @@
+{
+  "name": "mcp-manifest-guard",
+  "version": "0.1.0",
+  "description": "Load time integrity gate for MCP server manifests: pin, diff, and detect tool-poisoning before an agent ingests it.",
+  "main": "dist/lib/index.js",
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc",
+    "dev": "tsx src/cli/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "tsx": "^4.23.11",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
+  },
+  "types": "dist/lib/index.d.ts",
+  "bin": {
+    "mcp-manifest-guard": "dist/cli/index.js"
+  },
+  "files": [
+    "dist"
+  ]
+}
